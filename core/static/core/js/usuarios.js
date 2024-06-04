@@ -53,19 +53,30 @@ $(document).ready(function() {
   
   
     // Validar formulario con JQuery
-    $("#formulario-registro").validate({
+    $("#Registro").validate({
       rules: {
+
+        id: {
+            required: true,
+            number:true,
+            minlength: 2,
+            maxlength: 15,
+          },
+
         rut: {
           required: true,
-          rutChileno: true
+          rutChileno: true,
+        },
+        tipo: {
+          required: true,
         },
         nombres: {
             required: true,
-            soloLetras:true,
+            soloLetras: true,
         },
         apellidos: {
             required: true,
-            soloLetras:true,
+            soloLetras: true,
         },        
         correo: {
           required: true,
@@ -79,17 +90,22 @@ $(document).ready(function() {
           minlength: 5,
           maxlength: 15,
         },
-        password2: {
-          required: true,
-          minlength: 5,
-          maxlength: 15,
-          equalTo: "#password",
-        },
       }, // --> Fin de reglas
       messages: {
+
+        id: {
+          required: "El ID es un campo requerido",
+          number:"Solo debe contener numeros",
+          minlength: "Ingrese minimo 2 carácteres",
+          maxlength: "Debe tener un máximo de 15 caracteres",
+        },
+        
         rut: {
           required: "El RUT es un campo requerido",
           rutChileno: "El RUT no es válido (escriba sin puntos y con guión)"
+        },
+        tipo: {
+          required: "Por favor seleccione un tipo (cliente o usuario)",
         },
         nombres: {
           required: "El nombre es un campo requerido",
@@ -111,15 +127,15 @@ $(document).ready(function() {
           minlength: "La contraseña debe tener un mínimo de 5 caracteres",
           maxlength: "La contraseña debe tener un máximo de 15 caracteres",
         },
-        password2: {
-          required: "Repetir contraseña es un campo requerido",
-          minlength: "Repetir contraseña debe tener un mínimo de 5 caracteres",
-          maxlength: "Repetir contraseña debe tener un máximo de 15 caracteres",
-          equalTo: "Debe repetir la contraseña escrita anteriormente",
-        },
       }, // --> Fin de mensajes
+      errorPlacement: function(error, element) {
+        if (element.attr("name") == "tipo") {
+          error.appendTo("#tipo-error");
+        } else {
+          error.insertAfter(element);
+        }
+      },
       errorClass: "error-text", // Clase CSS para los mensajes de error
     });
-    
-  });
+});
   

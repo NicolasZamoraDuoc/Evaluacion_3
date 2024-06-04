@@ -1,2 +1,2 @@
-call ../tienda_venv/Scripts/activate.bat
+call C:\ProyectosDjango\tienda_venv
 call python manage.py runserver

@@ -9,23 +9,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <!-- Cabecera con menú principal -->
     <div id="menu_anonimo"></div>
-
     <br><b></b>
     <!-- Contenido principal de la pagina CARRUSEL -->
     <main role="main" >
       <div class="container pt-2" >
         <h1 class="text-center titulos">Solo Leveling</h1>
-        <h2> La tienda es administrada por {{nombre}}</h2>
-        {%for producto in productos%}
-        <div class="container-fluid">
-          <div class="row">
-            <div class=" ">
-              
-            </div>
-        {%endfor%}
         <br>
         <section class="text-center">
           <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
@@ -52,7 +42,6 @@
         </section>
       </div>
     </main>
-
     <!-- Productos de la tienda -->
     <div class="album py-2 bg-pink">
       <div class="container">
@@ -92,21 +81,18 @@
         </div>
       </div>
     </div>
-
     <div class="container">
       <p style="font-size: 18px;">
-          <a style="color:#ef89a1" href="ropa.html">
+          <a style="color:#ffffff" href="ropa.html">
               <img src="img/super_oferta.png" alt="" >
-              <span style="display: inline-block; vertical-align: middle;">
-                  ¡¡Por compras superiores a $20.000 en productos <br>
-                  ya estás concursando por una prenda de vestir!! <br>
-                  mira aquí los premios
-              </span>
+              <button class="btn boton_ropa" style="display: inline-block; vertical-align: middle;">
+                ¡¡Por compras superiores a $20.000 en productos <br>
+                ya estás concursando por una prenda de vestir!! <br>
+                mira aquí los premios
+          </button>
           </a>
       </p>
-  </div>
-  
-
+   </div>
     <br>
     <!-- Footer de la tienda -->
     <footer id="footer" >

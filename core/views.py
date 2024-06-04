@@ -4,7 +4,7 @@ from django.shortcuts import redirect, render
 
 def index(request):
     data={'nombre':'Chris Evans',
-          'productos':Producto.objects.all().order_by('nombre')}
+        'productos':Producto.objects.all().order_by('nombre')}
     return render(request, "core/index.html",data)
 
 def administracion(request):
