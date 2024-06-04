@@ -6,3 +6,5 @@ urlpatterns = [
     path('', include('core.urls')),
 ]
 
+#if settings.DEBUG:
+    #urlpatterns+= static(settings.MEDIA_URL,socument_root)

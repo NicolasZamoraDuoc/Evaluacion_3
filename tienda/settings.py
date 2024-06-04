@@ -71,6 +71,18 @@ DATABASES = {
     }
 }
 
+#DATABASES = {
+#   'default': {
+#       'ENGINE': 'mssql',
+#       'NAME': 'BuenosAiresDB',
+#       'USER': 'se1',
+#       'PASSWORD': '123',
+#       'HOST': 'LAPTOP-QH09JUO1\SQLEXPRESS',
+#       "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server", 
+#       },
+#   }
+#}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
