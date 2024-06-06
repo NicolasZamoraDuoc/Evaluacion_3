@@ -20,17 +20,17 @@
           <!-- Columna para la imagen -->
           <div class="col-md-4 p-4">
             <br>
-              <img src="img/producto1.jpg" class="img-fluid rounded-start foto_ficha" alt="...">
+              <img src="core/img/producto1.jpg" class="img-fluid rounded-start foto_ficha" alt="...">
           </div>
           <!-- Columna para el contenido -->
           <div class="col-md-8">
               <div class="card-body">
-                  <span class="titulo_producto_ficha titulos_2">LOL</span>
+                  <span class="titulo_producto_ficha titulos_2">{{producto.nombre}}</span>
                   <br>
                   <span class="precio_oferta_subscrito index_oferta">EN OFERTA 15% DE DESCUENTO</span>
                   <br>
                   <div class="precio_oferta_subscrito letra_blanca">
-                    <div > Precio: <span class="precio_oferta_subscrito index_precio">$25.000 </span></div>
+                    <div >Precio: <span class="precio_oferta_subscrito index_precio">{{producto.precio}} </span></div>
                     <div >Oferta: <span class="index_oferta">$21.250</span></div>
                     <div >Subscrito: <span class="precio_oferta_subscrito index_subscrito">$20.000</span></div>
                   </div>
@@ -38,6 +38,7 @@
                   <div class="descripcion_ficha titulos_2">
                       Descripción:
                       <br>
+                      {{producto.descripcion}}
                       Juego en línea donde dos equipos de cinco jugadores luchan para 
                       destruir la base enemiga mientras protegen la suya. 
                       Cada jugador controla un personaje con habilidades únicas. 
