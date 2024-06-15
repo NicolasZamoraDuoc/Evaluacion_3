@@ -1,1 +1,1 @@
-call C:\Users\CETECOM\Documents\GitHub\Evaluacion_3\.venv\Scripts\activate.bat
+call C:\ProyectosDjango\tienda\.venv\Scripts\deactivate.bat

@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+{% load static %}
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo1.png">
+    <link rel="icon" href="{% static 'core/img/logo1.png' %}">
     <title>Historial de Ventas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
 </head>
 <body>
     <!-- Cabecera con menú administrador -->
@@ -19,17 +19,17 @@
             <h1 class="titulos">Detalle de Boleta 2345</h1>
             <div class="d-flex">
               <div class="user-image img-fluid mt-4 ml-md-4" style="width:100px;">
-                <img src="img/vendido.webp" class="card-img-top" alt="...">
+                <img src="{% static 'core/img/vendido.webp' %}" class="card-img-top" alt="...">
                 <p class="text-center" style="color:rgb(131, 226, 150)">Vendido <br> 17/04/2024 <br>14:36</p>
               </div>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <div class="user-image img-fluid mt-4 ml-md-4" style="width: 100px;">
-                <img src="img/despachado.webp" class="card-img-top" alt="...">
+                <img src="{% static 'core/img/despachado.webp' %}" class="card-img-top" alt="...">
                 <p class="text-center" style="color:rgb(213, 226, 131)">Despachado <br> 19/04/2024 <br>09:12</p>
               </div>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <div class="user-image img-fluid mt-4 ml-md-4" style="width: 100px;">
-                <img src="img/entregado.png" class="card-img-top" alt="...">
+                <img src="{% static 'core/img/entregado.png' %}" class="card-img-top" alt="...">
                 <p class="text-center" style="color:rgb(226, 139, 131)">Entregado</p>
               </div>
             </div>
@@ -190,7 +190,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="{% static 'core/js/script.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

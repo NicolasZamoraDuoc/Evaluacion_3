@@ -9,4 +9,3 @@ call pip install pillow
 call pip install djangorestframework
 call pip install transbank-sdk
 call pip install django-extensions
-call pip install mssql-django

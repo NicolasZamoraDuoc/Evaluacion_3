@@ -1,36 +1,38 @@
 from django.urls import path
-from .views import index,ficha
-# from .views import administracion
-# from .views import bodega
-# from .views import boleta
-# from .views import carrito
-# from .views import ficha
-# from .views import ingresar
-# from .views import miscompras
-# from .views import misdatos
-# from .views import nosotros
-# from .views import productos
-# from .views import registro
-# from .views import ropa
-# from .views import usuarios
-# from .views import ventas
+
+from .views import index, ficha, ingresar
+
+# from .views import index, registrarme, nosotros, admin_productos
+# from .views import admin_usuarios, admin_bodega, ventas, boleta, ingresar, admin_usuarios
+# from .views import misdatos, miscompras, salir, carrito, ficha
+# from .views import cambiar_estado_boleta, poblar, obtener_productos, eliminar_producto_en_bodega
+# from .views import premio, eliminar_producto_en_carrito, agregar_producto_al_carrito
+# from .views import vaciar_carrito, mipassword, cambiar_password
 
 urlpatterns = [
-    path('', index, name="index"),
-    path('ficha/<producto_id>', ficha, name="ficha"),
-    # path('', administracion, name="administracion"),
-    # path('', bodega, name="bodega"),
-    # path('', boleta, name="boleta"),
-    # path('', carrito, name="carrito"),
-    # path('', ingresar, name="ingresar"),
-    # path('', miscompras, name="miscompras"),
-    # path('', misdatos, name="misdatos"),
-    # path('', nosotros, name="nosotros"),
-    # path('', productos, name="productos"),
-    # path('', registro, name="registro"),
-    # path('', ropa, name="ropa"),
-    # path('', usuarios, name="usuarios"),
-    # path('', ventas, name="ventas"),
+    path('', index, name='index'),
+    path('ficha/<producto_id>', ficha, name='ficha'),
+    path('ingresar', ingresar, name='ingresar'),
     
-    #ctrl+k+c=comentar
+    # path('registrarme', registrarme, name='registrarme'),
+    # path('nosotros', nosotros, name='nosotros'),
+    # path('admin_productos/<accion>/<id>', admin_productos, name='admin_productos'),
+    # path('admin_usuarios/<accion>/<id>', admin_usuarios, name='admin_usuarios'),
+    # path('cambiar_password', cambiar_password, name='cambiar_password'),
+    # path('admin_bodega', admin_bodega, name='admin_bodega'),
+    # path('obtener_productos', obtener_productos, name='obtener_productos'),
+    # path('eliminar_producto_en_bodega/<bodega_id>', eliminar_producto_en_bodega, name='eliminar_producto_en_bodega'),
+    # path('ventas', ventas, name='ventas'),
+    # path('boleta/<nro_boleta>', boleta, name='boleta'),
+    # path('cambiar_estado_boleta/<nro_boleta>/<estado>', cambiar_estado_boleta, name='cambiar_estado_boleta'),
+    # path('misdatos', misdatos, name='misdatos'),
+    # path('mipassword', mipassword, name='mipassword'),
+    # path('miscompras', miscompras, name='miscompras'),
+    # path('salir', salir, name='salir'),
+    # path('carrito', carrito, name='carrito'),
+    # path('eliminar_producto_en_carrito/<carrito_id>', eliminar_producto_en_carrito, name='eliminar_producto_en_carrito'),
+    # path('vaciar_carrito', vaciar_carrito, name='vaciar_carrito'),
+    # path('agregar_producto_al_carrito/<producto_id>', agregar_producto_al_carrito, name='agregar_producto_al_carrito'),
+    # path('premio', premio, name='premio'),
+    # path('poblar', poblar, name='poblar'),
 ]
