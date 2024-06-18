@@ -28,6 +28,9 @@ def ingresar(request):
     return render(request, 'core/ingresar.html', {
         'form': IngresarForm(),
     })
+    
+def administracion(request):
+    return render(request, 'core/administracion.html')
 
 # def poblar(request):
 #     # Permite poblar la base de datos con valores de prueba en todas sus tablas.
