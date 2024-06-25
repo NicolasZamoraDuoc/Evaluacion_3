@@ -154,6 +154,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
 # Parámetros para poder subir archivos a la carpeta "media"
 
 MEDIA_ROOT = path.join(BASE_DIR, 'media')

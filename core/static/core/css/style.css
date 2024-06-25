@@ -53,6 +53,10 @@ button.btn svg {
     margin: auto;  
 }
 
+.form-control {
+    max-width: 400px; /* Ancho máximo para los campos de texto */
+}
+
 .index_disponible {
     color: green;
     font-weight: bolder;

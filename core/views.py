@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 #from .zpoblar import poblar_bd
 from .models import Producto
-from .forms import IngresarForm
+from .forms import IngresarForm, ProductoForm
 
 def index(request):
     productos = Producto.objects.all().order_by('nombre')
@@ -31,6 +31,39 @@ def ingresar(request):
     
 def administracion(request):
     return render(request, 'core/administracion.html')
+
+# def productos(request):
+    #form= ProductoForm
+    #return render(request, 'core/productos.html', {'form': form})
+def productos(request):
+    return render(request, 'core/productos.html')
+
+def miscompras(request):
+    return render(request, 'core/miscompras.html')
+
+def nosotros(request):
+    return render(request, 'core/nosotros.html')
+
+def registro(request):
+    return render(request, 'core/registro.html')
+
+def misdatos(request):
+    return render(request, 'core/misdatos.html')
+
+def carrito(request):
+    return render(request, 'core/carrito.html')
+
+def usuarios(request):
+    return render(request, 'core/usuarios.html')
+
+def boleta(request):
+    return render(request, 'core/boleta.html')
+
+def ventas(request):
+    return render(request, 'core/ventas.html')
+
+def bodega(request):
+    return render(request, 'core/bodega.html')
 
 # def poblar(request):
 #     # Permite poblar la base de datos con valores de prueba en todas sus tablas.
