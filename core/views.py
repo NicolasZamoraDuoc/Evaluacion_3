@@ -35,6 +35,7 @@ def administracion(request):
 # def productos(request):
     #form= ProductoForm
     #return render(request, 'core/productos.html', {'form': form})
+    
 def productos(request):
     return render(request, 'core/productos.html')
 
@@ -64,6 +65,10 @@ def ventas(request):
 
 def bodega(request):
     return render(request, 'core/bodega.html')
+
+def ropa(request):
+    return render(request, 'core/ropa.html')
+
 
 # def poblar(request):
 #     # Permite poblar la base de datos con valores de prueba en todas sus tablas.
